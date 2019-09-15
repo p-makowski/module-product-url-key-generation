@@ -30,5 +30,7 @@ class Config extends AbstractHelper
         if (($lang === null) || ($lang === null)) {
             return self::SLUGIFY_LANGUAGE_USE_STORE;
         }
+
+        return $lang;
     }
 }
