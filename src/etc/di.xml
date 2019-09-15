@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Marcuspi\ProductUrlKeyGeneration\Api\ProductUrlKeyGeneratorInterface" type="Marcuspi\ProductUrlKeyGeneration\Model\ProductUrlKeyGenerator" />
+    <preference for="Marcuspi\ProductUrlKeyGeneration\Api\SlugifierInterface" type="Marcuspi\ProductUrlKeyGeneration\Model\Slugifier" />
+    <type name="Marcuspi\ProductUrlKeyGeneration\Model\Slugifier">
+        <arguments>
+            <argument name="localeList" xsi:type="object">Magento\Framework\Locale\ListsInterface\Proxy</argument>
+            <argument name="localeResolver" xsi:type="object">Magento\Framework\Locale\Resolver\Proxy</argument>
+        </arguments>
+    </type>
+    <type name="\Marcuspi\ProductUrlKeyGeneration\Model\ProductUrlKeyGenerator">
+        <arguments>
+            <argument name="productRepository" xsi:type="object">Magento\Catalog\Api\ProductRepositoryInterface\Proxy</argument>
+        </arguments>
+    </type>
+</config>

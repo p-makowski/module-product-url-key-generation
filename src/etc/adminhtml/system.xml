@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="catalog" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+            <group id="seo" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="slug_language" translate="label comment" type="select" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>URL Key Generation Language</label>
+                    <source_model>Marcuspi\ProductUrlKeyGeneration\Model\Config\Source\SlugifyLanguage</source_model>
+                    <comment>Language to use when creating URL Keys (e.g. when converting ß to ss)</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
