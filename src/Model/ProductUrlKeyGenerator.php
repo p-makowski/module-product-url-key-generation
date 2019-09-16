@@ -76,7 +76,7 @@ class ProductUrlKeyGenerator implements ProductUrlKeyGeneratorInterface
             ->addFilter(ProductAttributeInterface::CODE_SKU, $product->getSku(), "neq")
             ->addFilter(ProductAttributeInterface::CODE_SEO_FIELD_URL_KEY, $slug, "eq")
             ->create();
-        if($this->productRepository->getList($criteria)->getTotalCount() > 0) {
+        if ($this->productRepository->getList($criteria)->getTotalCount() > 0) {
             return true;
         }
 

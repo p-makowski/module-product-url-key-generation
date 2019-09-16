@@ -20,8 +20,7 @@ class SlugifyLanguage implements \Magento\Framework\Data\OptionSourceInterface
 
     public function __construct(
         \Magento\Framework\Locale\ListsInterface $localeList
-    )
-    {
+    ) {
         $this->localeList = $localeList;
     }
 

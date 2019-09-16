@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace Marcuspi\ProductUrlKeyGeneration\Helper;
 
+use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Framework\App\Helper\AbstractHelper;
 
 /**
@@ -23,8 +24,10 @@ class Config extends AbstractHelper
      * @param string|null $scopeCode
      * @return mixed
      */
-    public function getSlugifyLanguage(string $scopeType = \Magento\Framework\App\Config\ScopeConfigInterface::SCOPE_TYPE_DEFAULT, ?string $scopeCode = null)
-    {
+    public function getSlugifyLanguage(
+        string $scopeType = ScopeConfigInterface::SCOPE_TYPE_DEFAULT,
+        ?string $scopeCode = null
+    ) {
         $lang = $this->scopeConfig->getValue(self::SLUGIFY_LANGUAGE_XML_PATH, $scopeType, $scopeCode);
 
         if (($lang === null) || ($lang === null)) {

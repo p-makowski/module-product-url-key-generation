@@ -105,7 +105,8 @@ class Slugifier implements SlugifierInterface
         return $ruleset;
     }
 
-    private function getSlugifyRulesetForLocale($lang): array {
+    private function getSlugifyRulesetForLocale($lang): array
+    {
         $map = [
             "ar_DZ" => "arabic",
             "ar_EG" => "arabic",
