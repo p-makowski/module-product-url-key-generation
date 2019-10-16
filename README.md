@@ -12,7 +12,7 @@ composer require marcuspi/module-product-url-key-generation
 
 ## Usage
 
-The module will autogenerate a URL key for any products that are created with a blank or missing url_key attribute.
+The module will autogenerate a URL key for any products that are created with a blank or missing url_key attribute via the REST WebAPI.
 
 You can select which language to use as a base for slug generation (ie, Austrian users will want `ß -> sz`, not `ß -> ss`) in the backend under Stores -> Configuration -> Catalog -> Catalog -> Search Engine Optimization. It defaults to the store language.
 

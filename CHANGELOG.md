@@ -6,10 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2019-10-16
+### Fixed
+- A bug causing the module to generate new URL keys was patched
+
 ## [0.1.0] - 2019-09-16
 ### Added
 - Initial version
 
 
-[0.1.0]: https://github.com/marcusirgens/module-product-url-key-generation
+[0.1.1]: https://github.com/marcusirgens/module-product-url-key-generation/releases/tag/0.1.1
+[0.1.0]: https://github.com/marcusirgens/module-product-url-key-generation/releases/tag/0.1.0
 [Unreleased]:https://github.com/marcusirgens/module-product-url-key-generation
